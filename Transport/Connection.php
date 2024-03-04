@@ -64,6 +64,7 @@ class Connection
         'verify',
         'sasl_method',
         'connection_name',
+        'x-message-deduplication'
     ];
 
     private const AVAILABLE_QUEUE_OPTIONS = [
@@ -71,6 +72,7 @@ class Connection
         'binding_arguments',
         'flags',
         'arguments',
+        'x-message-deduplication',
     ];
 
     private const AVAILABLE_EXCHANGE_OPTIONS = [
@@ -80,6 +82,7 @@ class Connection
         'flags',
         'arguments',
         'bindings',
+        'x-message-deduplication'
     ];
 
     private AmqpFactory $amqpFactory;
